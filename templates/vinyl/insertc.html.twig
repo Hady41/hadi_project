@@ -1,0 +1,28 @@
+
+{% block body %}
+    <html><head>
+    <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>insert student</title></head>
+<body>
+
+
+<form action="school.php"  onsubimt="validatedata()" method="post">
+    <p><h2>Please enter the students data</p></h2>
+    <br>COURSE NAME :
+    <br><input type="text" name="Course name">
+
+    <Br>Course ID:
+    <br><input type="text" name="CourseID">
+
+
+    <BR>
+    <BR><BR>
+    <input  type="submit" value="insert">
+    </html>{% endblock  %}
