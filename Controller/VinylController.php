@@ -16,9 +16,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 
 
-/**
- * @method getEntityManager()
- */
+
 class VinylController extends AbstractController
 {
     #[Route('/',name:'app_homepage')]
@@ -247,7 +245,7 @@ class VinylController extends AbstractController
 
         ]);
 
-        // look for multiple Product objects matching the name, ordered by price
+        
         $products = $repository->findBy(
 
             ['name' => 'ASC']
